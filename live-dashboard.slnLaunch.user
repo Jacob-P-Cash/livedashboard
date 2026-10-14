@@ -1,0 +1,11 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "live-dashboard.Server\\live-dashboard.Server.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

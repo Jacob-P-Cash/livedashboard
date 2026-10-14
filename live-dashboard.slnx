@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="live-dashboard.client/live-dashboard.client.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="live-dashboard.Server/live-dashboard.Server.csproj" />
+</Solution>

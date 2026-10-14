@@ -1,0 +1,1 @@
+C:\Users\jacob\source\repos\live-dashboard\live-dashboard.client\obj\Debug\live-dashboard.client.esproj.CoreCompileInputs.cache

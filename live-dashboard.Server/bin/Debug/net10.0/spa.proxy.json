@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:50162",
+"RedirectUrl": "",
+"LaunchCommand": "npm run dev",
+"WorkingDirectory": "C:\\Users\\jacob\\source\\repos\\live-dashboard\\live-dashboard.Server\\..\\live-dashboard.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

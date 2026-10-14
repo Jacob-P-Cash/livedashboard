@@ -1,0 +1,6 @@
+@live_dashboard.Server_HostAddress = http://localhost:5195
+
+GET {{live_dashboard.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
