@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Sales.Models;
 using Microsoft.OpenApi;
 using Microsoft.Extensions.Options;
@@ -63,6 +63,17 @@ app.MapGet("/sales/totals/past/{startDate:datetime}/{endDate:datetime}", async (
     .Select(g => new {date = g.Key, totals = g.Sum(s=> s.Salevalue)})
     .ToListAsync();
     return Results.Ok(totalSales);
+});
+
+app.MapGet("/sales/orders/past/{startDate:datetime}/{endDate:datetime}", async (DateTime startDate, DateTime endDate, liveDashboardContext db) =>
+{
+    var totalOrders = await db.Sales
+    .Where(s => s.Timestamp >= startDate && s.Timestamp < endDate)
+    .GroupBy(s => s.Timestamp.Value.Date)
+    .OrderBy(g => g.Key)
+    .Select(g => new { date = g.Key, orders = g.Count() })
+    .ToListAsync();
+    return Results.Ok(totalOrders);
 });
 app.Run();
 

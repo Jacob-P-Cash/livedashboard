@@ -145,10 +145,11 @@ C:\Users\jacob\source\repos\live-dashboard\live-dashboard.Server\obj\Debug\net10
 C:\Users\jacob\source\repos\live-dashboard\live-dashboard.Server\obj\Debug\net10.0\staticwebassets.development.json
 C:\Users\jacob\source\repos\live-dashboard\live-dashboard.Server\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Users\jacob\source\repos\live-dashboard\live-dashboard.Server\obj\Debug\net10.0\swae.build.ex.cache
-C:\Users\jacob\source\repos\live-dashboard\live-dashboard.Server\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Users\jacob\source\repos\live-dashboard\live-dashboard.Server\obj\Debug\net10.0\live-das.8D3373D4.Up2Date
 C:\Users\jacob\source\repos\live-dashboard\live-dashboard.Server\obj\Debug\net10.0\live-dashboard.Server.dll
 C:\Users\jacob\source\repos\live-dashboard\live-dashboard.Server\obj\Debug\net10.0\refint\live-dashboard.Server.dll
 C:\Users\jacob\source\repos\live-dashboard\live-dashboard.Server\obj\Debug\net10.0\live-dashboard.Server.pdb
 C:\Users\jacob\source\repos\live-dashboard\live-dashboard.Server\obj\Debug\net10.0\live-dashboard.Server.genruntimeconfig.cache
 C:\Users\jacob\source\repos\live-dashboard\live-dashboard.Server\obj\Debug\net10.0\ref\live-dashboard.Server.dll
+C:\Users\jacob\source\repos\live-dashboard\live-dashboard.Server\obj\Debug\net10.0\live-dashboard.Server.sourcelink.json
+C:\Users\jacob\source\repos\live-dashboard\live-dashboard.Server\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
