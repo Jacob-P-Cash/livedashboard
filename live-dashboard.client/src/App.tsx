@@ -1,41 +1,32 @@
-import { useEffect, useState } from 'react';
+﻿import { useState } from 'react';
 import './App.css';
-import LiveChart from './components/LiveChart';
+import SalesChart from './widgets/SalesChart';
+import OrdersChart from './widgets/OrdersChart';
 
-interface totalSalesProps {
-    date:string;
-    totals:number;
-}
+
 
 function App() {
-   const [totalSales,setTotalSales] = useState<totalSalesProps[]>([]);
+   
+  const [startDate,setStartDate] = useState('');
+  const [endDate,setEndDate] = useState('');
 
-   const fetchTotalSales = async (date:Date) => {
-       try {
-           const endDate = date.toISOString();
-           const startDate = new Date();
-           startDate.setDate(startDate.getDate()-7)
-           const startDateString = startDate.toISOString();
-           const response = await fetch (`/sales/totals/past/${startDateString}/${endDate}`)
-           const result = await response.json();
-           setTotalSales(result)
-           console.log(result)
-
-   } catch(err) {
-       console.error(err)
-   }
-
-   }
-
-   useEffect(() => {
-       const date = new Date();
-       fetchTotalSales(date)
-   },[])
+   
 
    return (
-      <div className='bg-slate-900 text-sky-400'>
+      <div className='bg-slate-900 text-sky-400 rounded-md'>
       <h1 className='text-2xl'>sales</h1>
-      <LiveChart totalSales={totalSales}/>
+      <div className='flex min-w-100% justify-evenly'>
+        <div className='flex gap-1.5'>
+      <label htmlFor='start-date' >Start Date:</label>
+      <input type='date' id='start-date' onChange={(e) => setStartDate(e.target.value)}/>
+      </div>
+         <div className='flex gap-1.5'>
+      <label htmlFor='end-date' >End Date:</label>
+      <input type='date' id='end-date' onChange={(e)=> setEndDate(e.target.value)}/>
+      </div>
+      </div>
+      <SalesChart start={startDate} end={endDate}/>
+      <OrdersChart start={startDate} end={endDate}/>
       </div>
 
    )

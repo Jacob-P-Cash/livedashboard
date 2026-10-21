@@ -5,6 +5,7 @@ import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
+    <h2 className='mb-3.5'>live dashboard</h2>
     <App />
   </StrictMode>,
 )
